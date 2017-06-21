@@ -1,0 +1,11 @@
+(library
+ ((name        webmachine)
+  (public_name webmachine)
+  (modules (wm_util webmachine))
+  ;; (preprocess (pps (ppx_deriving.enum ppx_deriving.show ppx_deriving.create)))
+  (libraries (calendar
+              cohttp
+              dispatch
+              re
+              re.str
+              uri))))
